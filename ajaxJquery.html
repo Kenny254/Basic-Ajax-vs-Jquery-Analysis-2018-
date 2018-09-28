@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>Replace Text With jQuery and Ajax</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="display"><h2>jQuery will replace this text </h2></div>
+<button>Replace Text</button>
+<script>
+$(document).ready(function(){
+ $("button").click(function(){
+ $("#display").load("text.txt");
+ });
+});
+</script>
+</body>
+</html>
